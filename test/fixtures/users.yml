@@ -3,9 +3,9 @@
 player_user:
   email: player@example.com
   encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
-  role: player
+  role: 0
 
 admin_user:
   email: admin@example.com
   encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
-  role: admin
+  role: 1
